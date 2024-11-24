@@ -48,17 +48,17 @@ body {
     a função "polygon" e definimos as coordenadas que queremos alterar. Um ferramenta web para ajudar "clippy"*/
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     /* centralizando elemento */
     position: absolute;
     top: 40%;
@@ -76,7 +76,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -86,7 +86,7 @@ body {
     animation: moveInLeft 1s ease-out 0.5s;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -179,16 +179,16 @@ body {
     opacity: 0;
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: #fff;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom 1s ease-out .75s;
     animation-fill-mode: backwards;
 }
