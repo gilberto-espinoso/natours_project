@@ -58,6 +58,9 @@ body {
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+
+    /* remove bug de tremer animação */
+    backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -66,6 +69,8 @@ body {
     font-weight: 400;
     letter-spacing: 35px;
     /* espaçamento entre os caracteres */
+
+    animation: moveInLeft 1s ease-out 0.5s;
 }
 
 .heading-primary-sub {
@@ -73,4 +78,38 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.4px;
+
+    animation: moveInRigth 1s ease-out 0.5s;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRigth {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
