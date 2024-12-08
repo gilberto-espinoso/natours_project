@@ -1,0 +1,14 @@
+{
+  "name": "natours_project_css_advanced",
+  "version": "1.0.0",
+  "description": "A course project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gilberto Espinoso",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
