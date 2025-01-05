@@ -6,6 +6,11 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.2s;
+
+  @include customMedia(md) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 6rem;
     display: inline-block;
@@ -17,7 +22,12 @@
     background-clip: $color-grey-dark;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include customMedia(md) {
+      margin-bottom: 0;
+    }
   }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
