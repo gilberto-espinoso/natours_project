@@ -2,35 +2,34 @@
   max-width: $grid-width;
   margin: 0 auto;
 
-  @include respond(tab-port) {
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
 
-    @include respond(tab-port) {
+    @include customMedia(md) {
       margin-bottom: $gutter-vertical-small;
     }
+  }
+
+  @include customMedia(md) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;
 
   [class^="col-"] {
-    //background-color: orangered;
     float: left;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
 
-      @include respond(tab-port) {
+      @include customMedia(md) {
         margin-right: 0;
         margin-bottom: $gutter-vertical-small;
       }
     }
 
-    @include respond(tab-port) {
+    @include customMedia(md) {
       width: 100% !important;
     }
   }
