@@ -10,6 +10,7 @@
   "author": "Gilberto Espinoso",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "concat": "^1.0.3",
     "node-sass": "^9.0.0"
   }
